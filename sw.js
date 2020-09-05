@@ -27,17 +27,17 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-ebc9ab1090e2a646767b.js"
+    "url": "webpack-runtime-57817ee53c3cd57efa68.js"
   },
   {
     "url": "framework-fd2b85530eec85104a39.js"
   },
   {
-    "url": "app-9f3508150270eb184e1f.js"
+    "url": "app-311d3ee353aa7c30cb9f.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "9775517f703cb49374baf3f975d61a43"
+    "revision": "f9c90006ca74ef91927eef77377eae4b"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-0097d26fbd474b34ff9b.js"
@@ -48,14 +48,14 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "ec3233b8de8e76c2131cf15446d92978"
+    "revision": "64655fb3ed35bd3d1b4bf055d9771239"
   },
   {
     "url": "polyfill-5ace7e86a4d67524f45c.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "7da11e588a34069a0e31168e6dfd4a72"
+    "revision": "bcba5ba4cd6b9ef93ebceb9d4d115044"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -142,12 +142,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   lastNavigationRequest = event.request.url
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/SimpleFolio-Farhan`), ``)
+  pathname = pathname.replace(new RegExp(`^/Folio`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/SimpleFolio-Farhan/app-9f3508150270eb184e1f.js`))) {
+  if (!resources || !(await caches.match(`/Folio/app-311d3ee353aa7c30cb9f.js`))) {
     return await fetch(event.request)
   }
 
@@ -160,7 +160,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/SimpleFolio-Farhan/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/Folio/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
