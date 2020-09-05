@@ -2,7 +2,7 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
+  title: 'Farhan Ali | Developer', // e.g: 'Name | Developer'
   lang: '', // e.g: en, es, fr, jp
   description: '', // e.g: Welcome to my website
 };
@@ -10,48 +10,40 @@ export const headData = {
 // HERO DATA
 export const heroData = {
   title: '',
-  name: '',
-  subtitle: '',
+  name: 'Farhan',
+  subtitle: `I'm a self-taught Front-end Developer`,
   cta: '',
 };
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
-  paragraphOne: '',
-  paragraphTwo: '',
-  paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  img: 'farhan-profile2.png',
+  paragraphOne: `I'm a Front-end Developer experienced in JavaScript, TypeScript, React and React Native.`,
+  paragraphTwo: `I made a career change from hospitality to computer programming to challenge myself on a technical level and ensure personal and professional growth. I am a self-taught programmer who is passionate about learning new technologies, building scalable software and creating effective solutions. Currently working on a React Native project, which is a social media platform for sharing memes.`,
+  paragraphThree: `Feel free to contact me via email at any time.`,
+  resume: 'https://drive.google.com/file/d/1chem0kHhwp9IUzDHJGnf1goB7mDVWJu3/view?usp=sharing', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
+    img: 'rooney.png',
+    title: 'Face Recognition App',
+    info: `A full-stack web application built using the PERN Stack, this app allows you to detect faces in any image supplied. This was achieved using Clarifai's artificial intelligence API.`,
     info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    url: 'https://farhanali3193.github.io/faceCapture/',
+    repo: 'https://github.com/farhanali3193/faceCapture', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
+    img: 'pokedex.png',
+    title: 'Pokedex',
+    info:
+      'A responsive single page application with a real time search bar built using React. Integrated Pokedex API to display characteristics of pokemons.',
     info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    url: 'https://farhanali3193.github.io/Pokedex/',
+    repo: 'https://github.com/farhanali3193/Pokedex', // if no repo, the button will not show up
   },
 ];
 
@@ -59,7 +51,7 @@ export const projectsData = [
 export const contactData = {
   cta: '',
   btn: '',
-  email: '',
+  email: 'farhanali3193@gmail.com',
 };
 
 // FOOTER DATA
@@ -67,28 +59,18 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'twitter',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
-    },
-    {
-      id: nanoid(),
       name: 'linkedin',
-      url: '',
+      url: 'https://www.linkedin.com/in/farhanali3193/',
     },
     {
       id: nanoid(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/farhanali3193',
     },
   ],
 };
 
 // Github start/fork buttons
 export const githubButtons = {
-  isEnabled: true, // set to false to disable the GitHub stars/fork buttons
+  isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };
