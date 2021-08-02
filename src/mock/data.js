@@ -21,7 +21,7 @@ export const aboutData = {
   paragraphOne: `I'm a Front-end Developer experienced in JavaScript, TypeScript, React and React Native.`,
   paragraphTwo: `I made a career change from hospitality to computer programming to challenge myself on a technical level and ensure personal and professional growth. I am a self-taught programmer who is passionate about learning new technologies, building scalable software and creating effective solutions. Currently working on a React Native project, which is a social media platform for sharing memes.`,
   paragraphThree: `Feel free to contact me via email at any time.`,
-  resume: 'https://drive.google.com/file/d/1chem0kHhwp9IUzDHJGnf1goB7mDVWJu3/view?usp=sharing', // if no resume, the button will not show up
+  resume: `https://docs.google.com/document/d/1PUhHybmt3JdF_bHQO4rvuuKyLiPldJVRwcnX9jS-teM/edit?usp=sharing`, // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
